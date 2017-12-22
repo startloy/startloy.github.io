@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[My loy]]></title>
-    <url>%2F2017%2FMy-loy-1%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[My loy]]></title>
-    <url>%2F2017%2FMy-loy%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[汇总]]></title>
     <url>%2F2017%2F%E6%B1%87%E6%80%BB%2F</url>
     <content type="text"><![CDATA[Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake [title] [] [url] [link text]1code snippet 样例普通的代码块 1alert('Hello World!'); alert(‘Hello World!’);指定语言 php输出123$arr = array('23','kk'=&gt;3);implode(',',$arr);[rectangle setX: 10 y: 10 width: 20 height: 20]; 1[rectangle setX: 10 y: 10 width: 20 height: 20]; [rectangle setX: 10 y: 10 width: 20 height: 20];附加说明 Array.map1array.map(callback[, thisArg]) Array.maparray.map(callback[, thisArg])附加说明和网址 _.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] .compactUnderscore.js .compact([0, 1, false, 2, ‘’, 3]);=&gt; [1, 2, 3] 查找文章编写的标签背景图片更换 Ingrid Michaeson百度检测添加 正确认识和使用 标签以及分类]]></content>
