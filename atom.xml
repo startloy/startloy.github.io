@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.loy7778.cn/"/>
-  <updated>2017-12-22T02:31:43.867Z</updated>
+  <updated>2017-12-22T09:27:53.980Z</updated>
   <id>http://www.loy7778.cn/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>My Gallery</title>
+    <link href="http://www.loy7778.cn/2017/My-Gallery/"/>
+    <id>http://www.loy7778.cn/2017/My-Gallery/</id>
+    <published>2017-12-22T09:27:53.000Z</published>
+    <updated>2017-12-22T09:27:53.980Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>汇总</title>
+    <link href="http://www.loy7778.cn/2017/%E6%B1%87%E6%80%BB/"/>
+    <id>http://www.loy7778.cn/2017/汇总/</id>
+    <published>2017-12-22T07:40:11.000Z</published>
+    <updated>2017-12-22T07:48:16.570Z</updated>
+    
+    <content type="html"><![CDATA[<p>查找文章编写的标签<br>背景图片更换 Ingrid Michaeson<br>百度检测添加</p><p>正确认识和使用 标签以及分类</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;查找文章编写的标签&lt;br&gt;背景图片更换 Ingrid Michaeson&lt;br&gt;百度检测添加&lt;/p&gt;
+&lt;p&gt;正确认识和使用 标签以及分类&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>博客</title>
