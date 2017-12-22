@@ -568,25 +568,7 @@ David LevithanWide Awake
             
 
             
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
 
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
             
 
           </nav>
@@ -674,6 +656,22 @@ David LevithanWide Awake
 
 
 
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '', // 可选。默认为 location.href  比如我本人的就删除了
+  owner: 'startloy',              //比如我的叫anTtutu
+  repo: 'startloy.github.io',                 //比如我的叫anTtutu.github.io
+  oauth: {
+    client_id: '9aa932f8f51ead8bb97a',          //比如我的828***********
+    client_secret: 'dd3a748b3867b023fda3709e565b7728c6190791',  //比如我的49e************************
+  },
+})
+gitment.render('container')
+</script>
 
         
 <div class="busuanzi-count">
