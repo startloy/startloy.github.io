@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[汇总]]></title>
-    <url>%2F2017%2F%E6%B1%87%E6%80%BB%2F</url>
-    <content type="text"><![CDATA[Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake [title] [] [url] [link text]1code snippet 样例普通的代码块 1alert('Hello World!'); alert(‘Hello World!’);指定语言 php输出123$arr = array('23','kk'=&gt;3);implode(',',$arr);[rectangle setX: 10 y: 10 width: 20 height: 20]; 1[rectangle setX: 10 y: 10 width: 20 height: 20]; [rectangle setX: 10 y: 10 width: 20 height: 20];附加说明 Array.map1array.map(callback[, thisArg]) Array.maparray.map(callback[, thisArg])附加说明和网址 _.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] .compactUnderscore.js .compact([0, 1, false, 2, ‘’, 3]);=&gt; [1, 2, 3] 查找文章编写的标签背景图片更换 Ingrid Michaeson百度检测添加 正确认识和使用 标签以及分类 var gitment = new Gitment({ id: 'location.href', owner: '9919', repo: 'startloy.github.io', oauth: { client_id: '9aa932f8f51ead8bb97a', client_secret: 'dd3a748b3867b023fda3709e565b7728c6190791', }, }) gitment.render('container')]]></content>
+    <title><![CDATA[Hexo 搭建过程]]></title>
+    <url>%2F2017%2FHexo-%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[这里记录是从 配置环境之后的记录 有需要环境配置的朋友自行百度。 首先第一步 要创建自己的GitHub账号 传送门 GitHub 第二步 使用自己的GitHub账号建库 库名格式必须为 GitHub账号.github.io 在创建库时要注意最后这一个选项 要打勾，否者后面将不能添加绑定域名 第三步 进入库的设置将自己的域名添加进去 第四步 将自己的域名解析到 GitHub 的IP 注意这里的Ip有可能会产生变化从而导致解析失效。 常用的 HEXO 命令 123456789hexo n "新文章名字" # 新建文章hexo g # 清除 public 文件有时清除不干净导致无法更新博客内容，这是可以手动删除 public 文件夹hexo s # 开启本地服务hexo d # 将本地文件上载更新到Git库中hexo 文件中 代码标签一行必须从行首开始否者不会生效导致原样输出 总结 整体搭建还算简单主要是一些配置文件不熟悉，这篇博文后续跟上 环境搭建 的步骤 现在还欠缺的有博文评论功能 也在后续跟上吧]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
   <entry>
-    <title><![CDATA[博客]]></title>
-    <url>%2F2017%2F%E5%8D%9A%E5%AE%A2%2F</url>
-    <content type="text"></content>
+    <title><![CDATA[汇总]]></title>
+    <url>%2F2017%2F%E6%B1%87%E6%80%BB%2F</url>
+    <content type="text"><![CDATA[Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake [title] [] [url] [link text]1code snippet 样例普通的代码块 1alert('Hello World!'); alert(‘Hello World!’);指定语言 php输出123$arr = array('23','kk'=&gt;3);implode(',',$arr);[rectangle setX: 10 y: 10 width: 20 height: 20]; 1[rectangle setX: 10 y: 10 width: 20 height: 20]; [rectangle setX: 10 y: 10 width: 20 height: 20];附加说明 Array.map1array.map(callback[, thisArg]) Array.maparray.map(callback[, thisArg])附加说明和网址 _.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] .compactUnderscore.js .compact([0, 1, false, 2, ‘’, 3]);=&gt; [1, 2, 3] 查找文章编写的标签背景图片更换 Ingrid Michaeson百度检测添加 正确认识和使用 标签以及分类]]></content>
   </entry>
 </search>
