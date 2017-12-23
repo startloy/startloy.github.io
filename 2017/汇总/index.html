@@ -14,8 +14,8 @@
 
 <script>
     (function(){
-        if('password'){
-            if (prompt('请输入文章密码') !== 'password'){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
                 alert('密码错误！');
                 history.back();
             }
@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="The Skinny Coding">
 <meta property="og:description" content="Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake [title] [] [url] [link text]1code snippet 样例普通的代码块 1alert(&apos;Hello World!&apos;); al">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-12-22T10:09:36.541Z">
+<meta property="og:updated_time" content="2017-12-23T07:23:31.927Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="汇总">
 <meta name="twitter:description" content="Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake [title] [] [url] [link text]1code snippet 样例普通的代码块 1alert(&apos;Hello World!&apos;); al">
@@ -302,7 +302,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-22T15:40:11+08:00">
                 2017-12-22
@@ -373,7 +373,21 @@
 </em>.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]</p>
 <p>查找文章编写的标签<br>背景图片更换 Ingrid Michaeson<br>百度检测添加</p>
 <p>正确认识和使用 标签以及分类</p>
-
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'location.href', 
+  owner: '9919',             
+  repo: 'startloy.github.io',                 
+  oauth: {
+    client_id: '9aa932f8f51ead8bb97a',         
+    client_secret: 'dd3a748b3867b023fda3709e565b7728c6190791', 
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     
@@ -481,7 +495,7 @@
                 <a href="/archives">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -560,7 +574,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -575,23 +589,9 @@
 
 
 
-<!--
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'location.href', // 可选。默认为 location.href  比如我本人的就删除了
-  owner: 'startloy',              //比如我的叫anTtutu
-  repo: 'startloy.github.io',                 //比如我的叫anTtutu.github.io
-  oauth: {
-    client_id: '9aa932f8f51ead8bb97a',          //比如我的828***********
-    client_secret: 'dd3a748b3867b023fda3709e565b7728c6190791',  //比如我的49e************************
-  },
-})
-gitment.render('container')
-</script>
--->
+
+
+
         
 <div class="busuanzi-count">
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
