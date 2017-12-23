@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="">
+<html class="theme-next mist use-motion" lang="zh-cn">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -97,6 +97,7 @@
 <meta property="og:url" content="http://www.loy7778.cn/categories/index.html">
 <meta property="og:site_name" content="The Skinny Coding">
 <meta property="og:description" content="就此开启">
+<meta property="og:locale" content="zh-cn">
 <meta property="og:updated_time" content="2017-12-22T03:13:17.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
@@ -158,7 +159,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
 
   
   
@@ -306,6 +307,13 @@
           
 
   
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
 
 
 
@@ -439,13 +447,13 @@
 
 
 
-
+<!--
 <div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '', // 可选。默认为 location.href  比如我本人的就删除了
+  id: 'location.href', // 可选。默认为 location.href  比如我本人的就删除了
   owner: 'startloy',              //比如我的叫anTtutu
   repo: 'startloy.github.io',                 //比如我的叫anTtutu.github.io
   oauth: {
@@ -455,7 +463,7 @@ var gitment = new Gitment({
 })
 gitment.render('container')
 </script>
-
+-->
         
 <div class="busuanzi-count">
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -617,6 +625,43 @@ gitment.render('container')
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'startloy',
+            repo: 'startloy.github.io',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'dd3a748b3867b023fda3709e565b7728c6190791',
+            
+                client_id: '9aa932f8f51ead8bb97a'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
