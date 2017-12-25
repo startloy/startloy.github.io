@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.loy7778.cn/"/>
-  <updated>2017-12-23T08:38:57.262Z</updated>
+  <updated>2017-12-25T05:33:41.227Z</updated>
   <id>http://www.loy7778.cn/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>FB_授权登登录</title>
+    <link href="http://www.loy7778.cn/2017/FB-%E6%8E%88%E6%9D%83%E7%99%BB%E7%99%BB%E5%BD%95/"/>
+    <id>http://www.loy7778.cn/2017/FB-授权登登录/</id>
+    <published>2017-12-25T03:42:42.000Z</published>
+    <updated>2017-12-25T05:33:41.227Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O<br>虽然过后层并不是一帆风顺，但好在问题解决了。<br>这个是 FB 官方文档地址，大家可以进去看看。<br><a href="https://developers.facebook.com/docs/facebook-login" title="[developers] [FaceBook]" target="_blank" rel="noopener">developers.facebook.com</a><br>因为项目是WEB，所以这里仅说明WEb端的步骤。<br>下面贴出 FB 开发者账号设置步骤。<br><img src="/images/FB/1.png" class="[GitHub创建库]"><br><img src="/images/FB/2.png" class="[GitHub创建库]"><br><img src="/images/FB/3.png" class="[GitHub创建库]"><br><img src="/images/FB/4.png" class="[GitHub创建库]"><br><img src="/images/FB/5.png" class="[GitHub创建库]"><br><img src="/images/FB/6.png" class="[GitHub创建库]"><br><img src="/images/FB/7.png" class="[GitHub创建库]"><br><img src="/images/FB/8.png" class="[GitHub创建库]"><br><img src="/images/FB/9.png" class="[GitHub创建库]"></p><p>代码部分的话 其实单说FB授权跟WX授权流程基本一致，都是通过OAuth2<br>FB 对PHPer还是比较友好的，有相关的SDK<br><a href="https://developers.facebook.com/docs/reference/php" title="https://developers.facebook.com/docs/reference/php/ [developers] [FaceBook]" target="_blank" rel="noopener"></a><br>获取这个SDK之后基本上只需要将自己的应用编号和秘钥填进去就可以了</p><blockquote><p>总结<br>    回头再看也没有比较麻烦的地方，但是对于FB开发者账号的应用还是知之甚少。但就授权来说，主要还是跳转授权的地址要确定配置成为能访问到FB。这一点上我们运维很厉害了，哈哈。<br>    代码部分后面存放在百度云盘再贴出来。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O&lt;br&gt;虽然过后层并不是一帆风顺，但好在问题解决了。&lt;br&gt;这个是 FB 官方文档地址，大家可以进去看看。&lt;br&gt;&lt;a href=&quot;https://developers.facebook.com/do
+      
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://www.loy7778.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="FaceBook" scheme="http://www.loy7778.cn/tags/FaceBook/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo 搭建过程</title>
     <link href="http://www.loy7778.cn/2017/Hexo-%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
     <id>http://www.loy7778.cn/2017/Hexo-搭建过程/</id>
     <published>2017-12-23T07:37:23.000Z</published>
-    <updated>2017-12-23T08:38:57.262Z</updated>
+    <updated>2017-12-25T05:14:48.875Z</updated>
     
     <content type="html"><![CDATA[<p>这里记录是从 配置环境之后的记录 有需要环境配置的朋友自行百度。</p><p>首先第一步<br>    要创建自己的GitHub账号 传送门 <a href="https://github.com/" title="[loy] [Github]" target="_blank" rel="noopener">GitHub</a> </p><p>第二步<br>    使用自己的GitHub账号建库 库名格式必须为 GitHub账号.github.io<br>    在创建库时要注意最后这一个选项 要打勾，否者后面将不能添加绑定域名<br>    <img src="/images/BuildHexo/1.png" class="[GitHub创建库]"></p><p>第三步<br>    进入库的设置将自己的域名添加进去<br>    <img src="/images/BuildHexo/3.png" class="[GitHub创建库]"><br>    <img src="/images/BuildHexo/2.png" class="[GitHub创建库]"><br>第四步<br>    将自己的域名解析到 GitHub 的IP 注意这里的Ip有可能会产生变化从而导致解析失效。<br>    <img src="/images/BuildHexo/4.png" class="[GitHub创建库]"></p><p>常用的 HEXO 命令</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo n "新文章名字" # 新建文章</span><br><span class="line"></span><br><span class="line">hexo g  # 清除 public 文件有时清除不干净导致无法更新博客内容，这是可以手动删除 public 文件夹</span><br><span class="line"></span><br><span class="line">hexo s # 开启本地服务</span><br><span class="line"></span><br><span class="line">hexo d # 将本地文件上载更新到Git库中</span><br><span class="line"></span><br><span class="line">hexo 文件中 代码标签一行必须从行首开始否者不会生效导致原样输出</span><br></pre></td></tr></table></figure><blockquote><p>总结<br>    整体搭建还算简单主要是一些配置文件不熟悉，这篇博文后续跟上 环境搭建 的步骤<br>    现在还欠缺的有博文评论功能 也在后续跟上吧 </p></blockquote>]]></content>
     
@@ -47,7 +72,7 @@
     <link href="http://www.loy7778.cn/2017/%E6%B1%87%E6%80%BB/"/>
     <id>http://www.loy7778.cn/2017/汇总/</id>
     <published>2017-12-22T07:40:11.000Z</published>
-    <updated>2017-12-23T08:39:25.605Z</updated>
+    <updated>2017-12-23T08:42:02.602Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p><footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote><figure class="highlight plain"><figcaption><span>[title] [] [url] [link text]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code snippet</span><br></pre></td></tr></table></figure><p>样例<br>普通的代码块</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(<span class="string">'Hello World!'</span>);</span><br></pre></td></tr></table></figure><p>alert(‘Hello World!’);<br>指定语言</p><p>php输出<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$arr = <span class="keyword">array</span>(<span class="string">'23'</span>,<span class="string">'kk'</span>=&gt;<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">implode(<span class="string">','</span>,$arr);</span><br></pre></td></tr></table></figure><br>[rectangle setX: 10 y: 10 width: 20 height: 20];</p><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure><p>[rectangle setX: 10 y: 10 width: 20 height: 20];<br>附加说明</p><figure class="highlight plain"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.map(callback[, thisArg])</span><br></pre></td></tr></table></figure><p>Array.map<br>array.map(callback[, thisArg])<br>附加说明和网址</p><figure class="highlight plain"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="noopener">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">_.compact([0, 1, false, 2, &apos;&apos;, 3]);</span><br><span class="line">=&gt; [1, 2, 3]</span><br></pre></td></tr></table></figure><p><em>.compactUnderscore.js</em>.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]</p><p>查找文章编写的标签<br>背景图片更换 Ingrid Michaeson<br>百度检测添加</p><p>正确认识和使用 标签以及分类</p>]]></content>
     

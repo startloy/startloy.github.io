@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="FaceBook," />
 
 
 
@@ -91,16 +91,28 @@
 
 
 
-<meta name="description" content="就此开启">
-<meta property="og:type" content="website">
-<meta property="og:title" content="The Skinny Coding">
-<meta property="og:url" content="http://www.loy7778.cn/index.html">
+<meta name="description" content="前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O虽然过后层并不是一帆风顺，但好在问题解决了。这个是 FB 官方文档地址，大家可以进去看看。developers.facebook.com因为项目是WEB，所以这里仅说明WEb端的步骤。下面贴出 FB 开发者账号设置步骤。 代码部分的话 其实单说FB授权跟WX授权流程基本一致，都是通过OAuth2FB 对PHPer还是比较友好">
+<meta name="keywords" content="FaceBook">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FB_授权登登录">
+<meta property="og:url" content="http://www.loy7778.cn/2017/FB-授权登登录/index.html">
 <meta property="og:site_name" content="The Skinny Coding">
-<meta property="og:description" content="就此开启">
+<meta property="og:description" content="前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O虽然过后层并不是一帆风顺，但好在问题解决了。这个是 FB 官方文档地址，大家可以进去看看。developers.facebook.com因为项目是WEB，所以这里仅说明WEb端的步骤。下面贴出 FB 开发者账号设置步骤。 代码部分的话 其实单说FB授权跟WX授权流程基本一致，都是通过OAuth2FB 对PHPer还是比较友好">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/1.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/2.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/3.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/4.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/5.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/6.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/7.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/8.png">
+<meta property="og:image" content="http://www.loy7778.cn/images/FB/9.png">
+<meta property="og:updated_time" content="2017-12-25T05:33:41.227Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Skinny Coding">
-<meta name="twitter:description" content="就此开启">
+<meta name="twitter:title" content="FB_授权登登录">
+<meta name="twitter:description" content="前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O虽然过后层并不是一帆风顺，但好在问题解决了。这个是 FB 官方文档地址，大家可以进去看看。developers.facebook.com因为项目是WEB，所以这里仅说明WEb端的步骤。下面贴出 FB 开发者账号设置步骤。 代码部分的话 其实单说FB授权跟WX授权流程基本一致，都是通过OAuth2FB 对PHPer还是比较友好">
+<meta name="twitter:image" content="http://www.loy7778.cn/images/FB/1.png">
 
 
 
@@ -130,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://www.loy7778.cn/"/>
+  <link rel="canonical" href="http://www.loy7778.cn/2017/FB-授权登登录/"/>
 
 
 
 
 
-  <title>The Skinny Coding</title>
+  <title>FB_授权登登录 | The Skinny Coding</title>
   
 
 
@@ -165,8 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/startloy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
     
@@ -260,9 +271,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -292,9 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/FB-授权登登录/" itemprop="url">FB_授权登登录</a></h1>
+          <h1 class="post-title" itemprop="name headline">FB_授权登登录</h1>
         
 
         <div class="post-meta">
@@ -348,157 +357,13 @@
           
 
           
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O虽然过后层并不是一帆风顺，但好在问题解决了。这个是 FB 官方文档地址，大家可以进去看看。developers.facebook.com因为项目是WEB，所以这里仅说明WEb端的步骤。下面贴出 FB 开发者账号设置步骤。
-代码
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/FB-授权登登录/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2017/Hexo-搭建过程/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Loy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="The Skinny Coding">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/Hexo-搭建过程/" itemprop="url">Hexo 搭建过程</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-23T15:37:23+08:00">
-                2017-12-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">in</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
             </span>
           
 
           
-            
-          
-
-          
-          
-
-          
-
-          
 
           
 
@@ -515,20 +380,11 @@
       
 
       
-        
-          
-          这里记录是从 配置环境之后的记录 有需要环境配置的朋友自行百度。
-首先第一步    要创建自己的GitHub账号 传送门 GitHub 
-第二步    使用自己的GitHub账号建库 库名格式必须为 GitHub账号.github.io    在创建库时要注意最后这一个选项 要打勾，否者后面将不能添
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/Hexo-搭建过程/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <p>前段时间有项目需求是要使用脸书授权用户登录，当时的我内心是这个表情 :-O<br>虽然过后层并不是一帆风顺，但好在问题解决了。<br>这个是 FB 官方文档地址，大家可以进去看看。<br><a href="https://developers.facebook.com/docs/facebook-login" title="[developers] [FaceBook]" target="_blank" rel="noopener">developers.facebook.com</a><br>因为项目是WEB，所以这里仅说明WEb端的步骤。<br>下面贴出 FB 开发者账号设置步骤。<br><img src="/images/FB/1.png" class="[GitHub创建库]"><br><img src="/images/FB/2.png" class="[GitHub创建库]"><br><img src="/images/FB/3.png" class="[GitHub创建库]"><br><img src="/images/FB/4.png" class="[GitHub创建库]"><br><img src="/images/FB/5.png" class="[GitHub创建库]"><br><img src="/images/FB/6.png" class="[GitHub创建库]"><br><img src="/images/FB/7.png" class="[GitHub创建库]"><br><img src="/images/FB/8.png" class="[GitHub创建库]"><br><img src="/images/FB/9.png" class="[GitHub创建库]"></p>
+<p>代码部分的话 其实单说FB授权跟WX授权流程基本一致，都是通过OAuth2<br>FB 对PHPer还是比较友好的，有相关的SDK<br><a href="https://developers.facebook.com/docs/reference/php" title="https://developers.facebook.com/docs/reference/php/ [developers] [FaceBook]" target="_blank" rel="noopener"></a><br>获取这个SDK之后基本上只需要将自己的应用编号和秘钥填进去就可以了</p>
+<blockquote><p>总结<br>    回头再看也没有比较麻烦的地方，但是对于FB开发者账号的应用还是知之甚少。但就授权来说，主要还是跳转授权的地址要确定配置成为能访问到FB。这一点上我们运维很厉害了，哈哈。<br>    代码部分后面存放在百度云盘再贴出来。</p>
+</blockquote>
+
       
     </div>
     
@@ -543,142 +399,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2017/汇总/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Loy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="The Skinny Coding">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/汇总/" itemprop="url">汇总</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-22T15:40:11+08:00">
-                2017-12-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/FaceBook/" <i class="fa fa-tag"></i> FaceBook</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.
-David LevithanWide Awake
-[title] [] [url] [link text
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/汇总/#more" rel="contents">
-              Weiterlesen &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/Hexo-搭建过程/" rel="next" title="Hexo 搭建过程">
+                <i class="fa fa-chevron-left"></i> Hexo 搭建过程
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -688,10 +438,11 @@ David LevithanWide Awake
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -699,6 +450,10 @@ David LevithanWide Awake
 
 
           
+
+  
+
+
 
         </div>
         
@@ -970,6 +725,10 @@ David LevithanWide Awake
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
