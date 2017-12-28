@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.loy7778.cn/"/>
-  <updated>2017-12-25T07:31:29.469Z</updated>
+  <updated>2017-12-28T03:01:09.006Z</updated>
   <id>http://www.loy7778.cn/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用sql函数</title>
+    <link href="http://www.loy7778.cn/2017/%E5%B8%B8%E7%94%A8sql%E5%87%BD%E6%95%B0/"/>
+    <id>http://www.loy7778.cn/2017/常用sql函数/</id>
+    <published>2017-12-28T01:19:02.000Z</published>
+    <updated>2017-12-28T03:01:09.006Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>做WEB开发，每天都要和数据库打交道，所以，常用的sql函数还是有必要记录下的，下面记录项目中经常使用到的sql函数</p></blockquote><p>字符串拼接<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CONCAT(char c1, char c2, ..., char cn) ，其中char代表字符串，定长与不定长均可以</span><br></pre></td></tr></table></figure></p><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数值加和则可以直接使用 + 进行操作，其中不论数据类型，英文字母和汉字在计算过程中值默认是 <span class="number">0</span> 指的注意的是，不论 + 号操作符还是 CONCAT 函数 ，参数中出现<span class="literal">NULL</span>值会导致结果为NULl值。</span><br></pre></td></tr></table></figure><p>关于NUll值处理<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">isnull(expr) # 如expr 为null，那么isnull() 的返回值为 1，否则返回值为 0。</span><br><span class="line">IFNULL(expr1,expr2) # 如 expr1 为 null 则输出 expr2 ，否则输出 expr1</span><br><span class="line">NULLIF(expr1,expr2) # 如 expr1 = expr1 则输出 NULL ，否则输出 expr1</span><br><span class="line">IS NOT NULL # 判断非 NULL ，而 非空判断 用 !=''</span><br></pre></td></tr></table></figure></p><p>多字段排序<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORDER BY expr1 ASC,expr2 DESC,expr3,...</span><br></pre></td></tr></table></figure></p><p>同一字段多种排序<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORDER BY FIELD(name,'Suzi','Ben') DESC # 该函数根据某一字段的值进行排序，如果没有填写字段的所有情况的值，将先按未填写在函数中的字段进行排序。而后再按函数内字段排序。</span><br></pre></td></tr></table></figure></p><p>格式化时间戳<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from_unixtime(addtime,'%Y-%m-%d %H:%i:%s') # 该函数根据某一字段的值进行排序，如果没有填写字段的所有情况的值，将先按未填写在函数中的字段进行排序。而后再按函数内字段排序。</span><br></pre></td></tr></table></figure></p><p>日期操作<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TO_DAYS(950501) # 给出一个日期 date，返回一个天数(从 0 年开始的天数)</span><br><span class="line">FROM_DAYS(TO_DAYS(950501)) # 给出一个天数 N，返回一个 DATE 值</span><br></pre></td></tr></table></figure></p><p>字符串处理<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPPER('abc') # 小写变大写</span><br></pre></td></tr></table></figure></p><p>结果集操作<br><blockquote><p>UNION 和 UNION ALL<br>UNION 操作符用于合并两个或多个 SELECT 语句的结果集。<br>请注意，UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同</p><p>默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。<br>UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名。<br>UNION ALL 命令和 UNION 命令几乎是等效的，不过 UNION ALL 命令会列出所有的值。<br>另外还有一点要注意 在对合并之后的结果集操作时，外层 select 的 表名称 要起别名，不然会报错。</p></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;做WEB开发，每天都要和数据库打交道，所以，常用的sql函数还是有必要记录下的，下面记录项目中经常使用到的sql函数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;字符串拼接&lt;br&gt;&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>PHP_GD 图片合成</title>
