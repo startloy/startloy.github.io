@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.loy7778.cn/"/>
-  <updated>2017-12-28T03:01:09.006Z</updated>
+  <updated>2018-01-04T10:10:19.227Z</updated>
   <id>http://www.loy7778.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于递归</title>
+    <link href="http://www.loy7778.cn/2018/%E5%85%B3%E4%BA%8E%E9%80%92%E5%BD%92/"/>
+    <id>http://www.loy7778.cn/2018/关于递归/</id>
+    <published>2018-01-04T08:11:17.000Z</published>
+    <updated>2018-01-04T10:10:19.227Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在学习 Python ，不可避免的再一次跪倒在递归的裙摆之下。好记性不如烂笔头，温故而知新。在此记录一般循环和递归的对比。<br>先看循环体：<br>def a(n):<br>    f1 = 1<br>    f2 = 1<br>    if n &lt;= 2:<br>        return 2<br>    if n &gt; 2:<br>      while(n &gt; 2):<br>          f3 = f1+f2<br>          f1 = f2<br>          f2 = f3<br>          n-=1<br>      return f3<br>print a(10)<br>递归：<br>def c(n):<br>  if n&gt;2:<br>    fn = c(n-1)+c(n-2)<br>    return fn<br>  else:<br>    return 1<br>print c(10)<br>获取兔子总数，要获得数列可以用 append 方法依次往初始化数列中添加。<br>总体看下来 递归更偏向于抽象的拆分，这并不意味着递归的效率最高，<br>在Python中递归的默认层数为100层，如果递归层数过多，对系统也是一种负担，总之根据项目需求灵活应变才是正道。</p><p>如果对递归理解不是那么容易的话，就把整个过程看做两个方面：<br>The Frist<br>  递归到最后必须要出现终止，无限递归可不好玩，所以就有了 if else 来区分递归深入和递归终止。<br>The Second<br>  有了第一部分的递归终止，你要求得的结果就可以 由递归终止开始一步一步向上求值获得。<br>这样反过来理解 可能会好一些。<br>下面写关于 汉诺塔 的递归代码</p><p>def e(n,o,t,s):<br>  if n&gt;=2:<br>    e(n-1,o,s,t)<br>    e(1,o,t,s)<br>    e(n-1,t,o,s)<br>  else:<br>    print o+’===&gt;’+s<br>e(2,’o’,’t’,’s’)</p><p>汉诺塔的移动也可以分为两个方面：<br>The Frist<br>  不论现在o柱子上有多少层，(当然，肯定是大于一的)都把他们抽象的看做两层，<br>The Second<br>  现在你要做的就是<br>  把”第一层”由o柱移动到t柱<br>  再把”第二层”由o柱移动到s柱<br>  最后一步将”第一层”由t柱移动到s柱<br>  这期间你要做的当然不是移动上面的盘子，你要做的是更换柱子的位子，就是更换调用函数时对参数重新赋值</p><p>这些都是抽象步骤，不考虑过程。将上面的兔子的两部分拿到这里，也是从”终止递归”开始一步不往上得到你最终的结果。你所有的结果一定是从”递归终止”最后一步开始的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近在学习 Python ，不可避免的再一次跪倒在递归的裙摆之下。好记性不如烂笔头，温故而知新。在此记录一般循环和递归的对比。&lt;br&gt;先看循环体：&lt;br&gt;def a(n):&lt;br&gt;    f1 = 1&lt;br&gt;    f2 = 1&lt;br&gt;    if n &amp;lt;= 2:&lt;b
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>常用sql函数</title>
