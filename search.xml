@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[关于 Kingeditor]]></title>
     <url>%2F2018%2F%E5%85%B3%E4%BA%8E-Kingeditor%2F</url>
-    <content type="text"><![CDATA[Kingeditor 是一款比较老的富文本编辑器，好像已经停止更新了。因为之前项目中有用到这款编辑器的传图功能，并且也存在一些不完善的地方，再回头来进行一些调整。 关于关闭网络传图功能：在百度上找到一些答案但都没有达到想要的效果，最后查看 Kingeditor官网 demo找到了。 还有一些关于传图路径的设置： 我这里使用的是php开发的，其相关设置是在 upload_json.php 文件中。这里要注意区分 图片存储的物理目录 和 图片访问时的虚拟目录 之间的设置。 总结： 有官方文档的内容，遇到问题要先从官方的文档和demo中查找问题的解决方案。]]></content>
+    <content type="text"><![CDATA[Kingeditor 是一款比较老的富文本编辑器，好像已经停止更新了。因为之前项目中有用到这款编辑器的传图功能，并且也存在一些不完善的地方，再回头来进行一些调整。 关于关闭网络传图功能：在百度上找到一些答案但都没有达到想要的效果，最后查看 Kingeditor官网] demo找到了。http://kindeditor.net/demo.php 还有一些关于传图路径的设置： 我这里使用的是php开发的，其相关设置是在 upload_json.php 文件中。这里要注意区分 图片存储的物理目录 和 图片访问时的虚拟目录 之间的设置。 总结： 有官方文档的内容，遇到问题要先从官方的文档和demo中查找问题的解决方案。]]></content>
   </entry>
   <entry>
     <title><![CDATA[PHPMailer]]></title>
