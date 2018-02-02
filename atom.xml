@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.loy7778.cn/"/>
-  <updated>2018-01-17T08:00:58.948Z</updated>
+  <updated>2018-02-02T06:36:36.313Z</updated>
   <id>http://www.loy7778.cn/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于 Kingeditor</title>
+    <link href="http://www.loy7778.cn/2018/%E5%85%B3%E4%BA%8E-Kingeditor/"/>
+    <id>http://www.loy7778.cn/2018/关于-Kingeditor/</id>
+    <published>2018-02-02T06:17:00.000Z</published>
+    <updated>2018-02-02T06:36:36.313Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Kingeditor 是一款比较老的富文本编辑器，好像已经停止更新了。因为之前项目中有用到这款编辑器的传图功能，并且也存在一些不完善的地方，再回头来进行一些调整。</p></blockquote><p>关于关闭网络传图功能：<br><blockquote><p>在百度上找到一些答案但都没有达到想要的效果，最后查看 Kingeditor官网 demo找到了。<br><a href="http://kindeditor.net/demo.php" title="http://kindeditor.net/ [developers] [kingeditor_demo]" target="_blank" rel="noopener"></a><br><img src="/images/kingeditor/King.png" class="[FB]"></p></blockquote></p><p>还有一些关于传图路径的设置：</p><blockquote><p>我这里使用的是php开发的，其相关设置是在 upload_json.php 文件中。这里要注意区分 图片存储的物理目录 和 图片访问时的虚拟目录 之间的设置。</p></blockquote><img src="/images/kingeditor/php.png" class="[FB]"><blockquote><p>总结：<br>    有官方文档的内容，遇到问题要先从官方的文档和demo中查找问题的解决方案。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;p&gt;Kingeditor 是一款比较老的富文本编辑器，好像已经停止更新了。因为之前项目中有用到这款编辑器的传图功能，并且也存在一些不完善的地方，再回头来进行一些调整。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;关于关闭网络传图功能：&lt;br&gt;&lt;blockq
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>PHPMailer</title>
     <link href="http://www.loy7778.cn/2018/PHPMailer/"/>
     <id>http://www.loy7778.cn/2018/PHPMailer/</id>
     <published>2018-01-17T07:26:34.000Z</published>
-    <updated>2018-01-17T08:00:58.948Z</updated>
+    <updated>2018-01-17T08:03:01.900Z</updated>
     
     <content type="html"><![CDATA[<p>之前做了一个 发送邮件的demo，在本地测试完成之后就没动过，昨天上传到服务器（服务器环境是LAMP）之后发现邮件发送时网页非常卡顿，最后报错503 邮件发送失败<br>百度找到的方法也是千奇百怪，不过总结下来最多的情况就是端口占用和php.ini 的配置。<br>我这里最后解决是 配置了php.ini 文件</p><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">配置 openssl,在php.ini文件中，找到extension=php_openssl.dll，把前面的“；”去掉，重启apache。</span><br><span class="line">然后查看allow_url_fopen allow_url_fopen = On</span><br><span class="line">再查看是不是禁用函数了 disable_functions = pcntl_alarm,pcntl_fork,pcntl_waitpid,pcntl_wait,pcntl_wifexited,pcntl_wifstopped,pcntl_wifsignaled,pcntl_wexitstatus,pcntl_wtermsig,pcntl_wstopsig,pcntl_signal,pcntl_signal_dispatch,pcntl_get_last_error,pcntl_strerror,pcntl_sigprocmask,pcntl_sigwaitinfo,pcntl_sigtimedwait,pcntl_exec,pcntl_getpriority,pcntl_setpriority</span><br></pre></td></tr></table></figure><p>然后 把发邮件的SMTP端口由25更换为ssl加密对应的端口 之后解决的问题。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层对网络连接进行加密。</span><br><span class="line">SSL协议提供的服务主要有：</span><br><span class="line"><span class="number">1</span>、认证用户和服务器，确保数据发送到正确的客户机和服务器；</span><br><span class="line"><span class="number">2</span>、加密数据以防止数据中途被窃取；</span><br><span class="line"><span class="number">3</span>、维护数据的完整性，确保数据在传输过程中不被改变。</span><br><span class="line">建议您在设置邮箱时使用SSL协议，这样会保障您邮箱更安全的使用。</span><br><span class="line">使用方法：当您选择了使用SSL协议时，请您同时修改各收/发件服务器端口号。</span><br><span class="line">      邮件服务器名称服务器地址 端口号</span><br><span class="line">      POP3服务器pop<span class="number">.126</span>.com <span class="number">110</span></span><br><span class="line">      SMTP服务器smtp<span class="number">.126</span>.com <span class="number">25</span></span><br><span class="line">      IMAP服务器imap<span class="number">.126</span>.com <span class="number">143</span></span><br><span class="line">注：若您关闭了SSL，请将端口号修改回来，POP3的为<span class="number">110</span>，IMAP的为<span class="number">143</span>，SMTP的为<span class="number">25</span>。</span><br></pre></td></tr></table></figure><img src="/images/PHPMailer/SMTP_163.jpg" class="[163SMTP端口]"><p>中间测试和很久，总结下来用该非加密的邮件在Linux或者最新版的PHPMailer中运行传递被限制，25端口被占用也会引起这样的情况，但是我再测试时已经把占用25端口的服务关闭了。<br>在本地的测试环境是可以用25端口正常发送，但是在没有手动开启openssl时是不能用ssl发送邮件的。<br>所以，后面再碰到类似的情况，服务限制（比如ssl扩展是否开启）和端口占用方便查起。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">网上的朋友还有说开启 SElinux 的，但是个人测试来看没有效果，可能是赵成问题的原因不一样。</span><br><span class="line">vim /etc/selinux/config</span><br><span class="line">disabled</span><br><span class="line">检查服务器发信权限：</span><br><span class="line">#$ getsebool httpd_can_sendmail</span><br><span class="line">httpd_can_sendmail --&gt; off</span><br><span class="line">#$ getsebool httpd_can_network_connect</span><br><span class="line">httpd_can_network_connect --&gt; off</span><br><span class="line">如果出现上面的提示，则表明SElinux已经禁用了发信权限，需要按下面操作开启。</span><br><span class="line">#$ setsebool -P httpd_can_sendmail 1</span><br><span class="line">#$ setsebool -P httpd_can_network_connect 1</span><br><span class="line">请注意上面的操作需要在root权限下操作，如果不行请在命令前加上sudo。</span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">中间参考的博文地址在这里，各位可以参考</span><br><span class="line">http:<span class="comment">//drupalchina.cn/forum/302.html</span></span><br><span class="line">http:<span class="comment">//blog.csdn.net/kunpeng1987/article/details/78494256</span></span><br><span class="line">http:<span class="comment">//blog.csdn.net/xinluke/article/details/51925293</span></span><br><span class="line">http:<span class="comment">//help.163.com/10/1111/15/6L7HMASV00753VB8.html</span></span><br></pre></td></tr></table></figure>]]></content>
     
@@ -63,7 +86,7 @@
     <link href="http://www.loy7778.cn/2017/%E5%B8%B8%E7%94%A8sql%E5%87%BD%E6%95%B0/"/>
     <id>http://www.loy7778.cn/2017/常用sql函数/</id>
     <published>2017-12-28T01:19:02.000Z</published>
-    <updated>2017-12-28T03:01:09.006Z</updated>
+    <updated>2018-02-02T06:19:49.561Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>做WEB开发，每天都要和数据库打交道，所以，常用的sql函数还是有必要记录下的，下面记录项目中经常使用到的sql函数</p></blockquote><p>字符串拼接<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CONCAT(char c1, char c2, ..., char cn) ，其中char代表字符串，定长与不定长均可以</span><br></pre></td></tr></table></figure></p><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">数值加和则可以直接使用 + 进行操作，其中不论数据类型，英文字母和汉字在计算过程中值默认是 <span class="number">0</span> 指的注意的是，不论 + 号操作符还是 CONCAT 函数 ，参数中出现<span class="literal">NULL</span>值会导致结果为NULl值。</span><br></pre></td></tr></table></figure><p>关于NUll值处理<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">isnull(expr) # 如expr 为null，那么isnull() 的返回值为 1，否则返回值为 0。</span><br><span class="line">IFNULL(expr1,expr2) # 如 expr1 为 null 则输出 expr2 ，否则输出 expr1</span><br><span class="line">NULLIF(expr1,expr2) # 如 expr1 = expr1 则输出 NULL ，否则输出 expr1</span><br><span class="line">IS NOT NULL # 判断非 NULL ，而 非空判断 用 !=''</span><br></pre></td></tr></table></figure></p><p>多字段排序<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORDER BY expr1 ASC,expr2 DESC,expr3,...</span><br></pre></td></tr></table></figure></p><p>同一字段多种排序<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ORDER BY FIELD(name,'Suzi','Ben') DESC # 该函数根据某一字段的值进行排序，如果没有填写字段的所有情况的值，将先按未填写在函数中的字段进行排序。而后再按函数内字段排序。</span><br></pre></td></tr></table></figure></p><p>格式化时间戳<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from_unixtime(addtime,'%Y-%m-%d %H:%i:%s') # 该函数根据某一字段的值进行排序，如果没有填写字段的所有情况的值，将先按未填写在函数中的字段进行排序。而后再按函数内字段排序。</span><br></pre></td></tr></table></figure></p><p>日期操作<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TO_DAYS(950501) # 给出一个日期 date，返回一个天数(从 0 年开始的天数)</span><br><span class="line">FROM_DAYS(TO_DAYS(950501)) # 给出一个天数 N，返回一个 DATE 值</span><br></pre></td></tr></table></figure></p><p>字符串处理<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPPER('abc') # 小写变大写</span><br></pre></td></tr></table></figure></p><p>结果集操作<br><blockquote><p>UNION 和 UNION ALL<br>UNION 操作符用于合并两个或多个 SELECT 语句的结果集。<br>请注意，UNION 内部的 SELECT 语句必须拥有相同数量的列。列也必须拥有相似的数据类型。同时，每条 SELECT 语句中的列的顺序必须相同</p><p>默认地，UNION 操作符选取不同的值。如果允许重复的值，请使用 UNION ALL。<br>UNION 结果集中的列名总是等于 UNION 中第一个 SELECT 语句中的列名。<br>UNION ALL 命令和 UNION 命令几乎是等效的，不过 UNION ALL 命令会列出所有的值。<br>另外还有一点要注意 在对合并之后的结果集操作时，外层 select 的 表名称 要起别名，不然会报错。</p></blockquote></p>]]></content>
     
