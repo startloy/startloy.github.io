@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="就此开启">
+<meta name="description" content="其实这里东西也挺重要的，要经常看，持续更新。 首先第一个，微信授权相关的。1234567891011121314151617181920开发授权、分享需要数据整理微信 Oauth 和 微信 Share1、提供已经认证过的微信公众号的 AppID 和 AppSecret2、在微信公众平台 设置 使用的服务器对应的 IP 地址到白名单里面3、在微信公众平台 设置 安全回调地址 用以获取 access_">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数组处理不常用函数">
-<meta property="og:url" content="http://www.loy7778.cn/2018/数组处理不常用函数/index.html">
+<meta property="og:title" content="不常遇到">
+<meta property="og:url" content="http://www.loy7778.cn/2018/不常遇到/index.html">
 <meta property="og:site_name" content="The Skinny Coding">
-<meta property="og:description" content="就此开启">
+<meta property="og:description" content="其实这里东西也挺重要的，要经常看，持续更新。 首先第一个，微信授权相关的。1234567891011121314151617181920开发授权、分享需要数据整理微信 Oauth 和 微信 Share1、提供已经认证过的微信公众号的 AppID 和 AppSecret2、在微信公众平台 设置 使用的服务器对应的 IP 地址到白名单里面3、在微信公众平台 设置 安全回调地址 用以获取 access_">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-06-12T11:54:59.618Z">
+<meta property="og:updated_time" content="2018-06-12T12:55:21.943Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="数组处理不常用函数">
-<meta name="twitter:description" content="就此开启">
+<meta name="twitter:title" content="不常遇到">
+<meta name="twitter:description" content="其实这里东西也挺重要的，要经常看，持续更新。 首先第一个，微信授权相关的。1234567891011121314151617181920开发授权、分享需要数据整理微信 Oauth 和 微信 Share1、提供已经认证过的微信公众号的 AppID 和 AppSecret2、在微信公众平台 设置 使用的服务器对应的 IP 地址到白名单里面3、在微信公众平台 设置 安全回调地址 用以获取 access_">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://www.loy7778.cn/2018/数组处理不常用函数/"/>
+  <link rel="canonical" href="http://www.loy7778.cn/2018/不常遇到/"/>
 
 
 
 
 
-  <title>数组处理不常用函数 | The Skinny Coding</title>
+  <title>不常遇到 | The Skinny Coding</title>
   
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2018/数组处理不常用函数/">
+    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2018/不常遇到/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Loy">
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数组处理不常用函数</h1>
+          <h1 class="post-title" itemprop="name headline">不常遇到</h1>
         
 
         <div class="post-meta">
@@ -304,8 +304,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-10T10:22:06+08:00">
-                2018-06-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-01T11:37:03+08:00">
+                2018-06-01
               </time>
             
 
@@ -347,7 +347,12 @@
       
 
       
-        
+        <p>其实这里东西也挺重要的，要经常看，持续更新。</p>
+<p>首先第一个，微信授权相关的。<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">开发授权、分享需要数据整理</span><br><span class="line">微信 Oauth 和 微信 Share</span><br><span class="line"><span class="number">1</span>、提供已经认证过的微信公众号的 AppID 和 AppSecret</span><br><span class="line"><span class="number">2</span>、在微信公众平台 设置 使用的服务器对应的 IP 地址到白名单里面</span><br><span class="line"><span class="number">3</span>、在微信公众平台 设置 安全回调地址 用以获取 access_token</span><br><span class="line"><span class="number">4</span>、在微信公众平台 设置微信 JSSDK 分享安全域名</span><br><span class="line"></span><br><span class="line">微信授权处理过程中，发现OAuth2跳转过程极慢。以下为分析问题思路：</span><br><span class="line">	<span class="number">1</span>、先确定服务器连接到微信服务器的速度</span><br><span class="line">	<span class="number">2</span>、在服务器里面尝试增加其他的dns试试</span><br><span class="line">	<span class="number">3</span>、看看curl代码有没有指定过期时间</span><br><span class="line">	<span class="number">4</span>、去微信后台看统计数据，它有api调用的记录</span><br><span class="line">	<span class="number">5</span>、我们自己也调用微信接口，没存在这种情况</span><br><span class="line"></span><br><span class="line">	最后解决</span><br><span class="line">	找到机器中的 hosts 文件添加以下DNS解析记录</span><br><span class="line">	<span class="number">58.246</span><span class="number">.220</span><span class="number">.31</span> api.weixin.qq.com</span><br><span class="line">	<span class="number">223.167</span><span class="number">.86</span><span class="number">.71</span> open.weixin.qq.com</span><br><span class="line">	按道理阿里的DNS不应该这么慢的，不知道是什么原因（真的是要打架吗 = ，=!）。</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>Git 提交<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">warning: LF will be replaced by CRLF <span class="keyword">in</span> ......    </span><br><span class="line">The file will have its original line endings <span class="keyword">in</span> your working directory.   </span><br><span class="line">上面报错的原因是：</span><br><span class="line">	原因是路径中存在 / 的符号转义问题，<span class="literal">false</span>就是不转换符号默认是<span class="literal">true</span>，相当于把路径的 / 符号进行转义，这样添加的时候就有问题</span><br><span class="line">解决方法：</span><br><span class="line">	git config --global core.autocrlf <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fatal: HttpRequestException encountered 致命报错</span><br><span class="line">原因：	</span><br><span class="line">	Github 禁用了TLS v1<span class="number">.0</span> and v1<span class="number">.1</span>，必须更新Windows的git凭证管理器。</span><br><span class="line">解决：</span><br><span class="line">	https:<span class="comment">//github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/tag/v1.14.0</span></span><br><span class="line">	下载客户端 ： GCMW<span class="number">-1.14</span><span class="number">.0</span>.exe</span><br><span class="line">	安装之后报错就会消失。</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>PHP 函数系列</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">在合并多个数组并统一排序时会用到</span><br><span class="line">array_multisort() <span class="comment">// 可以用来一次对多个数组进行排序，或者根据某一维或多维对多维数组进行排序。</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -380,6 +385,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/常用汇总/" rel="prev" title="常用汇总">
+                常用汇总 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -447,7 +456,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

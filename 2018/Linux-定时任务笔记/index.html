@@ -91,17 +91,17 @@
 
 
 
-<meta name="description" content="1234近期项目中需要和客户对接接口，接口中需要添加header头信息进行安全验证。然后就是无情翻车，最后查到原因是 PHP中 md5() 函数出来的加密序列默认是32位，md5($sign, true); 第二参数设置为 true 时会返回16位加密序列，但是16位加密序列包含不可显示字符，无法验证通过。（这里标识下，通过网站上面进行md5获得的16位的加密序列实际上是32序列截取中间16位之后">
+<meta name="description" content="Imooc 视频笔记 检查 cron 服务    – 检查 Crontab 工具是否安装：crontab -l    – 检查 crond 服务是否启动 service crond status 安装 cron    – yum install vixie-cron    – yum install crontabs 每分钟打印当前时间到一个日志文件中    –     * COMMAND 0 ~">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PHP CURL">
-<meta property="og:url" content="http://www.loy7778.cn/2018/PHP-CURL/index.html">
+<meta property="og:title" content="Linux 定时任务笔记">
+<meta property="og:url" content="http://www.loy7778.cn/2018/Linux-定时任务笔记/index.html">
 <meta property="og:site_name" content="The Skinny Coding">
-<meta property="og:description" content="1234近期项目中需要和客户对接接口，接口中需要添加header头信息进行安全验证。然后就是无情翻车，最后查到原因是 PHP中 md5() 函数出来的加密序列默认是32位，md5($sign, true); 第二参数设置为 true 时会返回16位加密序列，但是16位加密序列包含不可显示字符，无法验证通过。（这里标识下，通过网站上面进行md5获得的16位的加密序列实际上是32序列截取中间16位之后">
+<meta property="og:description" content="Imooc 视频笔记 检查 cron 服务    – 检查 Crontab 工具是否安装：crontab -l    – 检查 crond 服务是否启动 service crond status 安装 cron    – yum install vixie-cron    – yum install crontabs 每分钟打印当前时间到一个日志文件中    –     * COMMAND 0 ~">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-06-12T10:20:58.530Z">
+<meta property="og:updated_time" content="2018-06-12T13:05:39.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="PHP CURL">
-<meta name="twitter:description" content="1234近期项目中需要和客户对接接口，接口中需要添加header头信息进行安全验证。然后就是无情翻车，最后查到原因是 PHP中 md5() 函数出来的加密序列默认是32位，md5($sign, true); 第二参数设置为 true 时会返回16位加密序列，但是16位加密序列包含不可显示字符，无法验证通过。（这里标识下，通过网站上面进行md5获得的16位的加密序列实际上是32序列截取中间16位之后">
+<meta name="twitter:title" content="Linux 定时任务笔记">
+<meta name="twitter:description" content="Imooc 视频笔记 检查 cron 服务    – 检查 Crontab 工具是否安装：crontab -l    – 检查 crond 服务是否启动 service crond status 安装 cron    – yum install vixie-cron    – yum install crontabs 每分钟打印当前时间到一个日志文件中    –     * COMMAND 0 ~">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://www.loy7778.cn/2018/PHP-CURL/"/>
+  <link rel="canonical" href="http://www.loy7778.cn/2018/Linux-定时任务笔记/"/>
 
 
 
 
 
-  <title>PHP CURL | The Skinny Coding</title>
+  <title>Linux 定时任务笔记 | The Skinny Coding</title>
   
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2018/PHP-CURL/">
+    <link itemprop="mainEntityOfPage" href="http://www.loy7778.cn/2018/Linux-定时任务笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Loy">
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">PHP CURL</h1>
+          <h1 class="post-title" itemprop="name headline">Linux 定时任务笔记</h1>
         
 
         <div class="post-meta">
@@ -304,8 +304,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-20T18:07:50+08:00">
-                2018-05-20
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-10T20:57:04+08:00">
+                2018-06-10
               </time>
             
 
@@ -347,9 +347,66 @@
       
 
       
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">近期项目中需要和客户对接接口，接口中需要添加header头信息进行安全验证。</span><br><span class="line">然后就是无情翻车，最后查到原因是 PHP中 md5() 函数出来的加密序列默认是<span class="number">32</span>位，</span><br><span class="line">md5($sign, <span class="literal">true</span>); 第二参数设置为 <span class="literal">true</span> 时会返回<span class="number">16</span>位加密序列，但是<span class="number">16</span>位加密序列包含不可显示字符，无法验证通过。</span><br><span class="line">（这里标识下，通过网站上面进行md5获得的<span class="number">16</span>位的加密序列实际上是<span class="number">32</span>序列截取中间<span class="number">16</span>位之后的结果。）</span><br></pre></td></tr></table></figure>
-<p>这里贴上 php curl 封装的 post 和 get 请求，之前用https竟然死活请求不成功，更换为http才能行。<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">function req_post($url = '', $param = '') &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> (empty($url) || empty($param)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    $appkey = '*******';</span><br><span class="line">    $appsecret = '****************************';</span><br><span class="line">    $timespan = time();</span><br><span class="line">    $guid = rand(<span class="number">1000</span>,<span class="number">9999</span>);</span><br><span class="line">    $platform = 'sign';</span><br><span class="line">    $sign = $appkey.<span class="string">'|'</span>.$timespan.<span class="string">'|'</span>.$guid.<span class="string">'|'</span>.$platform.<span class="string">'|'</span>.$appsecret;</span><br><span class="line">    $sign = strtoupper(md5($sign, <span class="literal">false</span>));</span><br><span class="line"></span><br><span class="line">    $postUrl = $url;</span><br><span class="line">    $curlPost = $param;</span><br><span class="line">    $ch = curl_init();<span class="comment">//初始化curl</span></span><br><span class="line">    curl_setopt($ch, CURLOPT_URL,$postUrl);<span class="comment">//抓取指定网页</span></span><br><span class="line">    <span class="comment">// curl_setopt($ch, CURLOPT_HEADER, 0);//设置header</span></span><br><span class="line">    $header = ['platform:sign','timespan:'.$timespan,'guid:'.$guid,'sign:'.$sign]; //设置一个你的浏览器agent的header</span><br><span class="line">    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);</span><br><span class="line">    curl_setopt($ch, CURLOPT_RETURNTRANSFER, <span class="number">1</span>);<span class="comment">// 要求结果为字符串且输出到屏幕上</span></span><br><span class="line">    curl_setopt($ch, CURLOPT_POST, <span class="number">1</span>);<span class="comment">//post提交方式</span></span><br><span class="line">    curl_setopt($ch, CURLOPT_POSTFIELDS, $curlPost);</span><br><span class="line">    $data = curl_exec($ch);<span class="comment">//运行curl</span></span><br><span class="line">    curl_close($ch);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> $data;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">function get1($url) &#123;</span><br><span class="line">    $appkey = '********';</span><br><span class="line">    $appsecret = '*******************';</span><br><span class="line">    $timespan = time();</span><br><span class="line">    $guid = rand(<span class="number">1000</span>,<span class="number">9999</span>);</span><br><span class="line">    $platform = 'sign';</span><br><span class="line">    $sign = $appkey.<span class="string">'|'</span>.$timespan.<span class="string">'|'</span>.$guid.<span class="string">'|'</span>.$platform.<span class="string">'|'</span>.$appsecret;</span><br><span class="line">    $sign = strtoupper(md5($sign, <span class="literal">false</span>));</span><br><span class="line">    $ch = curl_init();</span><br><span class="line">    curl_setopt($ch, CURLOPT_HTTPGET, <span class="literal">true</span>);</span><br><span class="line">    curl_setopt($ch, CURLOPT_RETURNTRANSFER, <span class="number">1</span>); <span class="comment">//TRUE 将curl_exec()获取的信息以字符串返回，而不是直接输出。</span></span><br><span class="line">    <span class="comment">// $header = ['User-Agent: php test']; //设置一个你的浏览器agent的header</span></span><br><span class="line">    $header = ['platform:sign','timespan:'.$timespan,'guid:'.$guid,'sign:'.$sign]; //设置一个你的浏览器agent的header</span><br><span class="line">    curl_setopt($ch, CURLOPT_HTTPHEADER, $header);</span><br><span class="line">    curl_setopt($ch, CURLOPT_HEADER, <span class="number">0</span>); <span class="comment">//返回response头部信息</span></span><br><span class="line">    curl_setopt($ch, CURLINFO_HEADER_OUT, <span class="literal">true</span>); <span class="comment">//TRUE 时追踪句柄的请求字符串，从 PHP 5.1.3 开始可用。这个很关键，就是允许你查看请求header</span></span><br><span class="line">    curl_setopt($ch, CURLOPT_URL, $url);</span><br><span class="line">    $result = json_decode(curl_exec($ch), <span class="literal">true</span>);</span><br><span class="line">    <span class="comment">// echo curl_getinfo($ch, CURLINFO_HEADER_OUT); //官方文档描述是“发送请求的字符串”，其实就是请求的header。这个就是直接查看请求header，因为上面允许查看</span></span><br><span class="line">    curl_close($ch);</span><br><span class="line">    <span class="keyword">return</span> $result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+        <p>Imooc 视频笔记</p>
+<p>检查 cron 服务<br>    – 检查 Crontab 工具是否安装：crontab -l<br>    – 检查 crond 服务是否启动 service crond status</p>
+<p>安装 cron<br>    – yum install vixie-cron<br>    – yum install crontabs</p>
+<p>每分钟打印当前时间到一个日志文件中<br>    – <em> </em> <em> </em> * COMMAND</p>
+<pre><code>0 ~ 59 分钟
+0 ~ 23 小时
+1 ~ 31 日期
+1 ~ 12 月份
+0 ~ 7 星期（0 或者 7 都表示星期天）
+</code></pre><p>执行级别之间用空格间隔</p>
+<p>– <em> 表示任何时候都匹配<br>– 可以用 “A,B,C” 表示A或者B或者C时执行命令<br>– 可以用 “A-B” 表示A到B之间时执行命令<br>– 可以用 “</em>/A” 表示每A分钟(小时等) 执行一次命令</p>
+<p>– tail -f /tmp/log.txt 持续输出 /tmp/log.txt 文件中的数据<br>– tail -3 /tmp/log.txt 输出 /tmp/log.txt 文件中最后三条数据<br>– tail /tmp/log.txt 输出 /tmp/log.txt 文件中所有数据</p>
+<p>一个执行级别有多个数值的 用逗号间隔</p>
+<p>30 21 <em> </em> <em> service httpd restart // 每天 21:30 重启 apache服务<br>// 离散型分布<br>45 4 1,10,22 </em> <em> service httpd restart // 每月1、10、22 日 的4:45 重启 apache<br>// 连续分布<br>45 4 1-10 </em> * service httpd restart // 每月 1 到 10 号 重启 Apache</p>
+<p>– <em>/1 </em> <em> </em> * date &gt;&gt; /tmp/log.txt  // 每隔一分钟执行一次计划任务  斜线之前是执行范围，之后是频次</p>
+<p>1-59/2 <em> </em> <em> </em> service httpd restart // 从第一分钟到59分钟内 每两分钟执行一次计划任务 （相当于只在奇数分钟时执行任务）</p>
+<p>0 23-7/1 <em> </em> <em> service httpd restart // 每天晚上的11点到第二天7点 重启 apache 若分钟数 写 </em> 则表示 在每天晚上的11点到第二天7点 的每一分钟都会重启 apache</p>
+<p>0,30 18-23 <em> </em> <em> service httpd restart // 每天18点至23点之间每隔30分钟重启apache<br>0-59/30 18-23 </em> <em> </em> service httpd restart // 每天18点至23点之间每隔30分钟重启apache</p>
+<p>crontab -help 查看 cron 命令帮助</p>
+<p>crond 计划任务执行的日子记录在 /var/log/cron 文件中<br>tail -f /var/log/cron  // 查看任务执行日志</p>
+<p>cron 的系统配置文件 /etc/crontab 可以通过编辑配置文件来实现系统级定时任务</p>
+<p>cron.d 下的配置文件会自动载入为 root 用户的计划任务<br>crontab 文件名  // 将文件中的内容导入计划任务 这里执行要特别小心，因为操作文件中的数据将会完全覆盖 crontab -e 编辑的计划任务，所以为了保证编辑的计划任务不丢失，可以选择将计划任务写入配置文件，再将文件通过 crontab 导入计划任务</p>
+<p>在编辑系统中的 crond 配置文件时（cron.d目录下的），要注意写明计划所属用户</p>
+<p><em>/2 </em> <em> </em> <em> username echo “编辑 crond 系统配置文件”
+</em>/2 <em> </em> <em> </em> echo “编辑 crond 系统配置文件”  // 编辑指定用户的定时任务不用指定用户</p>
+<p>crontab 工具无法编辑 系统级别的计划任务（/etc/crontab &amp;&amp; /etc/cron.d/） </p>
+<p>root 用户可以通过编辑系统配置文件给指定用户 配置定时任务，但是 ctontab -e -u name<br>命令编辑指定用户的计划任务时 是不能查看编辑 root指定或系统级的定时任务，但是在 定时任务执行日志中可以看到。</p>
+<p>crontab -l  //  输出当前用户的定时任务<br>    cat /var/spool/cron/root  // crontab -l 命令实际执行的文件<br>    /var/log/  // 该目录下存放系统的日志文件 包括有 cron 定时任务的日志 ll cron* 查看<br>    /var/spool/mail/  // 系统会将任务执行信息已邮件的形式发送给 root 用户。 </p>
+<pre><code>ll -a  // 查看当前用户家目录中的隐藏文件
 
+在 root 家目录中有 .bash_profile 文件，是系统环境变量的配置文件。
+在修改完成 .bash_profile 配置文件之后 执行 source .bash_profile 命令 重新载入配置文件
+执行 echo $PATH // 输出 文件中设置号的环境变量
+</code></pre><p>易错<br>    在计划任务的脚本中会经常用到 在 .bash_profile 预设好的系统环境变量,但是这些变量 可以在命令中被识别出来，不一定在执行脚本中也能够被识别。</p>
+<pre><code>第三域 和 第五域 是 互为 ”或“ 关系；
+
+test `date +%w` -eq 0 || 1 || 2 || ... 
+echo $? // 输出 0 标表示上述判断 成功 ， 输出 1 表示上述判断失败。
+
+在命令行中使用 test 做判断时 要注意避免使用 = 号做判断，因为 test 会将 1=0 整体作为一个字符串处理 (test abd)
+必须使用 = 号时，在 = 前后加空格   1 = 0   
+
+test 1 = 0 &amp;&amp; echo hello   // 在 test 判断成立时 输出 hello       &amp;&amp; 对应的是 ||
+
+四月的第一个星期日早上1时59分运行a.sh
+59 1 1-7 4 0 /root/a.sh             // 因为 第三域 和 第五域 互为 或 关系 任务会执行 10次
+59 1 1-7 4 * test `date +\%w` -eq 0 &amp;&amp; /root/a.sh     // 在定时任务中加上对于星期的判断 避免上述问题，这里要注意 在命令行中看可以直接输出 date +%w 但是在 脚本中要对 % 号进行转义
+
+分钟设置误用 要注意 * 号 表示任意时刻都可执行
+    两小时运行一次
+
+    * */2 * * * /root/a.sh // 错误
+    0 */2 * * * /root/a.sh // 正确
+
+crantab 最小执行单位是分钟，但是可以借助 sleep 命令 将最小执行单数扩展到秒
+
+    */1 * * * * date &gt;&gt; /tmp/date.log
+    */1 * * * * sleep 30s; date &gt;&gt; /tmp/date.log  // sleep 0.5s
+上述借用 sleep 可以实现 定时任务在每分钟执行两次
+</code></pre>
       
     </div>
     
@@ -373,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/Python学习之Turtle/" rel="next" title="Python学习之Turtle">
-                <i class="fa fa-chevron-left"></i> Python学习之Turtle
+              <a href="/2018/常用汇总/" rel="next" title="常用汇总">
+                <i class="fa fa-chevron-left"></i> 常用汇总
               </a>
             
           </div>
@@ -382,10 +439,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/不常遇到/" rel="prev" title="不常遇到">
-                不常遇到 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
